@@ -4,7 +4,7 @@ export const Validation = {
         return !regex.test(name);
     },
     validateEmail: (email) => {
-        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
         return !regex.test(email);
     },
     validatePhone: (phone) => {
@@ -18,7 +18,6 @@ export const Validation = {
     validateCardNumber(cardNumber) {
         return !this.luhnCheck(cardNumber.replace(/\D/g, ''))
     },
-
     luhnCheck(cardNumber) {
         let sum = 0;
         let isEven = false;

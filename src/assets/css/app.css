@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    justify-content:center;
+}
+
+.card {
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.card-content{
+    padding: 5px;
+}
+.label-input {
+    margin : 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.label-input > label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+.label-input > input {
+    width: calc(100% - 150px);
+}
+
+.label-input > btn-label {
+    width: 60%
+}
+
+.full-width{
+    width: 100%;
+}
+
+.error{
+    color: red;
+    font-size: 10px;
+    margin: 2px 5px 2px 5px;
+    text-align: right;
+}
+
+.card > .actions-buttons{
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    position: relative;
+    outline: 0;
+    border: 0;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.715em;
+    color: inherit;
+    background: transparent;
+    text-align: center;
+    width: auto;
+    height: auto;
+    cursor: default;
+    padding: 4px 16px;
+}
+
+.address-btn {
+    width: 100px;
+    background: black;
+    color: white;
+}
+
+.address-column {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.address-input {
+    margin-bottom: 5px;
+}
+
+.bg-active {
+    background: darkgreen;
+    color: white;
+}
+
+.bg-disabled {
+    background: darkgrey;
+    color: white;
+    cursor: not-allowed;
+}
