@@ -86,14 +86,26 @@
 .address-input {
     margin-bottom: 5px;
 }
+.card-number-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-number-input > input{
+    width: 20%;
+}
 
 .bg-active {
     background: darkgreen;
     color: white;
+    cursor: pointer;
+    margin: 0 10px;
 }
 
 .bg-disabled {
     background: darkgrey;
     color: white;
     cursor: not-allowed;
+    margin: 0 10px;
 }

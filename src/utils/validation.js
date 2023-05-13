@@ -25,9 +25,7 @@ export const Validation = {
             let digit = parseInt(cardNumber.charAt(i), 10);
             if (isEven) {
                 digit *= 2;
-                if (digit > 9) {
-                    digit -= 9;
-                }
+                if (digit > 9) digit -= 9;
             }
             sum += digit;
             isEven = !isEven;
